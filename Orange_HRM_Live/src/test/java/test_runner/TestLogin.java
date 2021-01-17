@@ -13,7 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(format = { "pretty", "html:reports/test-report" },
 features="src/test/resources/feature",
 glue="step_definition",tags = {"@loginPage,@changeDetails"}, monochrome = true)
-public class CucumberRunner extends AbstractTestNGCucumberTests{
+public class TestLogin extends AbstractTestNGCucumberTests{
 @AfterClass
 public static void tearDown() throws Exception {
 	BrowserFactory.driver.quit();
