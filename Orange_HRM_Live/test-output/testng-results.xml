@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: orange_hrm.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: OrangeHRM Feature File</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: TC01_Successful Employee login to OrangeHRM portal</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  navigate to Orange HRM page (passed : 19s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 14s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  home page should be displayed (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenarioOutline">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  User is in to My Info Page (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  User clicked on Edit button (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  User changes the first name to &quot;&lt;first_name&gt;&quot; (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  User clicked on save button (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  updated first name &quot;&lt;first_name&gt;&quot; should be diplayed (passed : 1s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="49057" started-at="2021-01-17T10:25:08Z" finished-at="2021-01-17T10:25:57Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:test_runner.CucumberRunner@46cdf8bd]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="49057" started-at="2021-01-17T10:25:08Z" finished-at="2021-01-17T10:25:57Z">
+      <class name="test_runner.CucumberRunner">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:test_runner.CucumberRunner@46cdf8bd]" name="run_cukes" duration-ms="47420" started-at="2021-01-17T10:25:08Z" description="Runs Cucumber Features" finished-at="2021-01-17T10:25:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: orange_hrm.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: OrangeHRM Feature File</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: TC01_Successful Employee login to OrangeHRM portal</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  navigate to Orange HRM page (passed : 19s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 14s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  home page should be displayed (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenarioOutline">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  User is in to My Info Page (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  User clicked on Edit button (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  User changes the first name to &quot;&lt;first_name&gt;&quot; (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  User clicked on save button (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  updated first name &quot;&lt;first_name&gt;&quot; should be diplayed (passed : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_runner.CucumberRunner@46cdf8bd]" name="tearDown" is-config="true" duration-ms="1568" started-at="2021-01-17T10:25:55Z" finished-at="2021-01-17T10:25:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_runner.CucumberRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
