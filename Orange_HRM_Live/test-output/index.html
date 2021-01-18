@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
               <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\kumar\AppData\Local\Temp\testng-eclipse-887720645\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\rkuma270\AppData\Local\Temp\testng-eclipse-1744364947\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test_runner.CucumberRunner" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="test_runner.TestLogin" class="method navigator-link" hash-for-method="run_cukes">run_cukes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test_runner.CucumberRunner</span>
+              <span class="class-name">test_runner.TestLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,16 +137,16 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kumar\AppData\Local\Temp\testng-eclipse-887720645\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rkuma270\AppData\Local\Temp\testng-eclipse-1744364947\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test_runner.CucumberRunner&quot;/&gt;
+      &lt;class name=&quot;test_runner.TestLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -197,13 +197,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'run_cukes')
-data.setCell(0, 2, 'test_runner.CucumberRunner')
-data.setCell(0, 3, 47420);
+data.setCell(0, 2, 'test_runner.TestLogin')
+data.setCell(0, 3, 34029);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,15 +220,15 @@ return data;
                 <span class="reporter-method-output"><div "featureFile">Feature File: orange_hrm.feature</div></span>
                 <span class="reporter-method-output"><div "feature">Feature: OrangeHRM Feature File</div></span>
                 <span class="reporter-method-output"><div "scenario">Scenario: TC01_Successful Employee login to OrangeHRM portal</div></span>
-                <span class="reporter-method-output"><div "result">Given  navigate to Orange HRM page (passed : 19s)</div></span>
-                <span class="reporter-method-output"><div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 14s)</div></span>
+                <span class="reporter-method-output"><div "result">Given  navigate to Orange HRM page (passed : 11s)</div></span>
+                <span class="reporter-method-output"><div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 10s)</div></span>
                 <span class="reporter-method-output"><div "result">Then  home page should be displayed (passed : 0s)</div></span>
                 <span class="reporter-method-output"><div "scenarioOutline">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div></span>
                 <span class="reporter-method-output"><div "scenario">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div></span>
-                <span class="reporter-method-output"><div "result">Given  User is in to My Info Page (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">Given  User is in to My Info Page (passed : 3s)</div></span>
                 <span class="reporter-method-output"><div "result">When  User clicked on Edit button (passed : 1s)</div></span>
                 <span class="reporter-method-output"><div "result">And  User changes the first name to &quot;&lt;first_name&gt;&quot; (passed : 1s)</div></span>
-                <span class="reporter-method-output"><div "result">And  User clicked on save button (passed : 4s)</div></span>
+                <span class="reporter-method-output"><div "result">And  User clicked on save button (passed : 3s)</div></span>
                 <span class="reporter-method-output"><div "result">Then  updated first name &quot;&lt;first_name&gt;&quot; should be diplayed (passed : 1s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -247,14 +247,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test_runner.CucumberRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test_runner.TestLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">run_cukes</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">47456 ms</span>
+                <span class="method-start">34034 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
