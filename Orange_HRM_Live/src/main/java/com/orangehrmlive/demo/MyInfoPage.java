@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import com.orangehrmlive.demo.GenericFunctions;
 
-public class HomePage extends GenericFunctions {
+public class MyInfoPage extends GenericFunctions {
 
 	WebDriver driver;
 
-	public HomePage(WebDriver driver) {
+	public MyInfoPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -27,6 +27,20 @@ public class HomePage extends GenericFunctions {
 	@FindBy(how = How.ID, using = "menu_pim_viewMyDetails")
 	@CacheLookup
 	WebElement myInfo;
+	
+	@FindBy(how = How.ID, using = "empPic")
+	@CacheLookup
+	WebElement employeePhotoButton;
+	@FindBy(how = How.NAME, using = "photofile")
+	@CacheLookup
+	WebElement choosePhotoButton;
+	@FindBy(how = How.ID, using = "btnSave")
+	@CacheLookup
+	WebElement uploadButton;
+	@FindBy(how = How.XPATH, using = "//*/div[@class='message success fadable']")
+	@CacheLookup
+	WebElement uploadSuccessMsg;
+	
 
 	public void clickMyInfo() {
 		wait(1);

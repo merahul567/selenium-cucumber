@@ -7,19 +7,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.orangehrmlive.demo.BrowserFactory;
-import com.orangehrmlive.demo.HomePage;
+import com.orangehrmlive.demo.MyInfoPage;
 import com.orangehrmlive.demo.LoginPage;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class StepDefinition {
+public class LoginStepDefinition {
 
 	public static WebDriver driver;
-	BrowserFactory obj1;
 	static LoginPage loginPage;
-	static HomePage homePage;
 
 	@Given("^navigate to Orange HRM page$")
 	public void navigate() {
@@ -42,34 +40,7 @@ public class StepDefinition {
 		
 	}
 	
-	@Given("^User is in to My Info Page$")
-	public void User_is_in_to_My_Info_Page(){
-		homePage = PageFactory.initElements(driver, HomePage.class);
-		homePage.clickMyInfo();
-	}
 
-	@When("^User clicked on Edit button$")
-	public void User_clicked_on_Edit_button() {
-		homePage.clickEditSave();
-	    
-	}
 
-	@When("^User changes the first name to \"(.*)\"$")
-	public void User_changes_the_first_name(String name){
-	    homePage.changeFirstName(name);
-	}
 
-	@When("^User clicked on save button$")
-	public void User_clicked_on_save_button()  {
-		homePage.clickEditSave();
-	}
-
-	@Then("^updated first name \"(.*)\" should be diplayed$")
-	public void updated_first_name_should_be_diplayed(String name)  {
-		String expectedText = name;;
-		String actualText = homePage.verifyNameChange();
-		Assert.assertTrue(expectedText.equals(actualText));
-		//Assert.assertTrue("Name change not successful", expectedText.equals(actualText));
-	    
-	}
 }
