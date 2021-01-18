@@ -39,7 +39,7 @@ formatter.match({
   "location": "StepDefinition.navigate()"
 });
 formatter.result({
-  "duration": 20908778100,
+  "duration": 24326377100,
   "status": "passed"
 });
 formatter.match({
@@ -56,14 +56,14 @@ formatter.match({
   "location": "StepDefinition.login(String,String)"
 });
 formatter.result({
-  "duration": 11521973900,
+  "duration": 11219480900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.verifySuccessful()"
 });
 formatter.result({
-  "duration": 78056900,
+  "duration": 73902800,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -177,14 +177,14 @@ formatter.match({
   "location": "StepDefinition.User_is_in_to_My_Info_Page()"
 });
 formatter.result({
-  "duration": 5859535000,
+  "duration": 3713165300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.User_clicked_on_Edit_button()"
 });
 formatter.result({
-  "duration": 1115317600,
+  "duration": 1107820300,
   "status": "passed"
 });
 formatter.match({
@@ -197,14 +197,14 @@ formatter.match({
   "location": "StepDefinition.User_changes_the_first_name(String)"
 });
 formatter.result({
-  "duration": 1561854900,
+  "duration": 1272424400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.User_clicked_on_save_button()"
 });
 formatter.result({
-  "duration": 3954007100,
+  "duration": 3283382200,
   "status": "passed"
 });
 formatter.match({
@@ -217,7 +217,7 @@ formatter.match({
   "location": "StepDefinition.updated_first_name_should_be_diplayed(String)"
 });
 formatter.result({
-  "duration": 1169028600,
+  "duration": 1258334900,
   "status": "passed"
 });
 });
