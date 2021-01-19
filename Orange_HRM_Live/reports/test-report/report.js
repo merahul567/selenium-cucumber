@@ -39,7 +39,7 @@ formatter.match({
   "location": "LoginStepDefinition.navigate()"
 });
 formatter.result({
-  "duration": 13194455800,
+  "duration": 33552737700,
   "status": "passed"
 });
 formatter.match({
@@ -56,14 +56,14 @@ formatter.match({
   "location": "LoginStepDefinition.login(String,String)"
 });
 formatter.result({
-  "duration": 8983182200,
+  "duration": 21930832400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.verifySuccessful()"
 });
 formatter.result({
-  "duration": 90612600,
+  "duration": 89290900,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -177,14 +177,14 @@ formatter.match({
   "location": "ChangeDetailsStepDefinition.User_is_in_to_My_Info_Page()"
 });
 formatter.result({
-  "duration": 11312627400,
+  "duration": 15466089400,
   "status": "passed"
 });
 formatter.match({
   "location": "ChangeDetailsStepDefinition.User_clicked_on_Edit_button()"
 });
 formatter.result({
-  "duration": 1168599700,
+  "duration": 1173511300,
   "status": "passed"
 });
 formatter.match({
@@ -197,14 +197,14 @@ formatter.match({
   "location": "ChangeDetailsStepDefinition.User_changes_the_first_name(String)"
 });
 formatter.result({
-  "duration": 1274877200,
+  "duration": 1267196500,
   "status": "passed"
 });
 formatter.match({
   "location": "ChangeDetailsStepDefinition.User_clicked_on_save_button()"
 });
 formatter.result({
-  "duration": 3480935300,
+  "duration": 6846146200,
   "status": "passed"
 });
 formatter.match({
@@ -217,14 +217,14 @@ formatter.match({
   "location": "ChangeDetailsStepDefinition.updated_first_name_should_be_diplayed(String)"
 });
 formatter.result({
-  "duration": 1161642000,
+  "duration": 1168954000,
   "status": "passed"
 });
 formatter.scenario({
   "line": 23,
-  "name": "TC07_Check the upload of a JPG format image",
+  "name": "TC08_Check the upload of a PNG format image",
   "description": "",
-  "id": "orangehrm-feature-file;tc07-check-the-upload-of-a-jpg-format-image",
+  "id": "orangehrm-feature-file;tc08-check-the-upload-of-a-png-format-image",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -235,69 +235,51 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 24,
-  "name": "User is in to My Info Page",
-  "keyword": "Given "
-});
-formatter.step({
   "line": 25,
   "name": "User click on change photo",
   "keyword": "When "
 });
 formatter.step({
   "line": 26,
-  "name": "User click on Choose File",
+  "name": "User select a png photo to upload",
   "keyword": "And "
 });
 formatter.step({
   "line": 27,
-  "name": "User select a photo from local drive",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "User click on Open button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
   "name": "User click on upload button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 30,
+  "line": 28,
   "name": "Photo should be uploaded",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ChangeDetailsStepDefinition.User_is_in_to_My_Info_Page()"
+  "location": "ChangeDetailsStepDefinition.User_clicked_on_change_photo()"
 });
 formatter.result({
-  "duration": 2568468800,
+  "duration": 6119874200,
   "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "ChangeDetailsStepDefinition.User_clicked_on_Choose_File()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 1121352300,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "ChangeDetailsStepDefinition.User_clicked_on_upload_button()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 30102199500,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "ChangeDetailsStepDefinition.photo_should_be_uploaded()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 75749100,
+  "status": "passed"
 });
 });

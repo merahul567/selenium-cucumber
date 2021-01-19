@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[<div "featureFile">Feature File: orange_hrm.feature</div>]]>
@@ -11,10 +11,10 @@
       <![CDATA[<div "scenario">Scenario: TC01_Successful Employee login to OrangeHRM portal</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  navigate to Orange HRM page (passed : 13s)</div>]]>
+      <![CDATA[<div "result">Given  navigate to Orange HRM page (passed : 33s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 8s)</div>]]>
+      <![CDATA[<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 21s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">Then  home page should be displayed (passed : 0s)</div>]]>
@@ -26,7 +26,7 @@
       <![CDATA[<div "scenario">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  User is in to My Info Page (passed : 11s)</div>]]>
+      <![CDATA[<div "result">Given  User is in to My Info Page (passed : 15s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">When  User clicked on Edit button (passed : 1s)</div>]]>
@@ -35,45 +35,36 @@
       <![CDATA[<div "result">And  User changes the first name to &quot;&lt;first_name&gt;&quot; (passed : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  User clicked on save button (passed : 3s)</div>]]>
+      <![CDATA[<div "result">And  User clicked on save button (passed : 6s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">Then  updated first name &quot;&lt;first_name&gt;&quot; should be diplayed (passed : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "scenario">Scenario: TC07_Check the upload of a JPG format image</div>]]>
+      <![CDATA[<div "scenario">Scenario: TC08_Check the upload of a PNG format image</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  User is in to My Info Page (passed : 2s)</div>]]>
+      <![CDATA[<div "result">Given  User is in to My Info Page (passed : 6s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">When  User clicked on Edit button (undefined)</div>]]>
+      <![CDATA[<div "result">When  User clicked on Edit button (passed : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  User changes the first name to &quot;Rahul&quot; (undefined)</div>]]>
+      <![CDATA[<div "result">And  User changes the first name to &quot;Rahul&quot; (passed : 30s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  User clicked on save button (undefined)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Then  updated first name &quot;Rahul&quot; should be diplayed (undefined)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Given  User is in to My Info Page (undefined)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">When  User click on change photo (undefined)</div>]]>
+      <![CDATA[<div "result">And  User clicked on save button (passed : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-01-18T15:36:03Z" name="Default suite" finished-at="2021-01-18T15:36:50Z" duration-ms="47072">
+  <suite started-at="2021-01-19T11:39:27Z" name="Default suite" finished-at="2021-01-19T11:41:30Z" duration-ms="122942">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:test_runner.TestLogin@4362d7df]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:test_runner.TestLogin@f8908f6]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-01-18T15:36:03Z" name="Default test" finished-at="2021-01-18T15:36:50Z" duration-ms="47072">
+    <test started-at="2021-01-19T11:39:27Z" name="Default test" finished-at="2021-01-19T11:41:30Z" duration-ms="122942">
       <class name="test_runner.TestLogin">
-        <test-method signature="run_cukes()[pri:0, instance:test_runner.TestLogin@4362d7df]" started-at="2021-01-18T15:36:03Z" name="run_cukes" description="Runs Cucumber Features" finished-at="2021-01-18T15:36:48Z" duration-ms="45337" status="FAIL">
+        <test-method signature="run_cukes()[pri:0, instance:test_runner.TestLogin@f8908f6]" started-at="2021-01-19T11:39:27Z" name="run_cukes" description="Runs Cucumber Features" finished-at="2021-01-19T11:41:28Z" duration-ms="121092" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[<div "featureFile">Feature File: orange_hrm.feature</div>]]>
@@ -85,10 +76,10 @@
               <![CDATA[<div "scenario">Scenario: TC01_Successful Employee login to OrangeHRM portal</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  navigate to Orange HRM page (passed : 13s)</div>]]>
+              <![CDATA[<div "result">Given  navigate to Orange HRM page (passed : 33s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 8s)</div>]]>
+              <![CDATA[<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 21s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">Then  home page should be displayed (passed : 0s)</div>]]>
@@ -100,7 +91,7 @@
               <![CDATA[<div "scenario">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  User is in to My Info Page (passed : 11s)</div>]]>
+              <![CDATA[<div "result">Given  User is in to My Info Page (passed : 15s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">When  User clicked on Edit button (passed : 1s)</div>]]>
@@ -109,38 +100,29 @@
               <![CDATA[<div "result">And  User changes the first name to &quot;&lt;first_name&gt;&quot; (passed : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  User clicked on save button (passed : 3s)</div>]]>
+              <![CDATA[<div "result">And  User clicked on save button (passed : 6s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">Then  updated first name &quot;&lt;first_name&gt;&quot; should be diplayed (passed : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "scenario">Scenario: TC07_Check the upload of a JPG format image</div>]]>
+              <![CDATA[<div "scenario">Scenario: TC08_Check the upload of a PNG format image</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  User is in to My Info Page (passed : 2s)</div>]]>
+              <![CDATA[<div "result">Given  User is in to My Info Page (passed : 6s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">When  User clicked on Edit button (undefined)</div>]]>
+              <![CDATA[<div "result">When  User clicked on Edit button (passed : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  User changes the first name to &quot;Rahul&quot; (undefined)</div>]]>
+              <![CDATA[<div "result">And  User changes the first name to &quot;Rahul&quot; (passed : 30s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  User clicked on save button (undefined)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Then  updated first name &quot;Rahul&quot; should be diplayed (undefined)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Given  User is in to My Info Page (undefined)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">When  User click on change photo (undefined)</div>]]>
+              <![CDATA[<div "result">And  User clicked on save button (passed : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- run_cukes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_runner.TestLogin@4362d7df]" started-at="2021-01-18T15:36:48Z" name="tearDown" finished-at="2021-01-18T15:36:50Z" duration-ms="1693" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_runner.TestLogin@f8908f6]" started-at="2021-01-19T11:41:28Z" name="tearDown" finished-at="2021-01-19T11:41:30Z" duration-ms="1789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

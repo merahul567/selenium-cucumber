@@ -20,8 +20,6 @@ public class ExcelUtils {
 
 		File file = new File(filePath + "\\" + fileName);
 
-		// Create an object of FileInputStream class to read excel file
-
 		FileInputStream inputStream = new FileInputStream(file);
 
 		Workbook workbook = null;
@@ -51,25 +49,17 @@ public class ExcelUtils {
 
 		}
 
-		// Read sheet inside the workbook by its name
-
 		Sheet sheet = workbook.getSheet(sheetName);
 
 		// Find number of rows in excel file
 
 		int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
 
-		// Create a loop over all the rows of excel file to read it
-
 		for (int i = 0; i < rowCount + 1; i++) {
 
 			Row row = sheet.getRow(i);
 
-			// Create a loop to print cell values in a row
-
 			for (int j = 0; j < row.getLastCellNum(); j++) {
-
-				// Print Excel data in console
 
 				System.out.print(row.getCell(j).getStringCellValue() + "|| ");
 
@@ -83,11 +73,7 @@ public class ExcelUtils {
 	public void writeExcel(String filePath, String fileName, String sheetName, String[] dataToWrite)
 			throws IOException {
 
-		// Create an object of File class to open xlsx file
-
 		File file = new File(filePath + "\\" + fileName);
-
-		// Create an object of FileInputStream class to read excel file
 
 		FileInputStream inputStream = new FileInputStream(file);
 
@@ -118,27 +104,17 @@ public class ExcelUtils {
 
 		}
 
-		// Read excel sheet by sheet name
-
 		Sheet sheet = workbook.getSheet(sheetName);
 
 		// Get the current count of rows in excel file
 
 		int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
 
-		// Get the first row from the sheet
-
 		Row row = sheet.getRow(0);
-
-		// Create a new row and append it at last of sheet
 
 		Row newRow = sheet.createRow(rowCount + 1);
 
-		// Create a loop over the cell of newly created Row
-
 		for (int j = 0; j < row.getLastCellNum(); j++) {
-
-			// Fill data in row
 
 			Cell cell = newRow.createCell(j);
 
@@ -146,19 +122,11 @@ public class ExcelUtils {
 
 		}
 
-		// Close input stream
-
 		inputStream.close();
-
-		// Create an object of FileOutputStream class to create write data in excel file
 
 		FileOutputStream outputStream = new FileOutputStream(file);
 
-		// write data in the excel file
-
 		workbook.write(outputStream);
-
-		// close output stream
 
 		outputStream.close();
 

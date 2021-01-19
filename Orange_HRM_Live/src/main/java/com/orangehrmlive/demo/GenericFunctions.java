@@ -2,6 +2,8 @@ package com.orangehrmlive.demo;
 
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.JOptionPane;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -42,6 +44,14 @@ public class GenericFunctions extends BrowserFactory {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("arguments[0].setAttribute('style','background: yellow; border: solid 2px red');", element);
+	}
+
+	public static void enterCaptcha(WebElement captchaField) {
+		// prompting user to enter captcha
+		String captchaVal = JOptionPane.showInputDialog("Please enter the captcha value:");
+		System.out.println(captchaVal);
+		// Type the entered captcha to the text box
+		captchaField.sendKeys(captchaVal);
 	}
 
 }
