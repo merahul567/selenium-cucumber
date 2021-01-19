@@ -1,13 +1,11 @@
 package step_definition;
 
-//import org.junit.Assert;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.orangehrmlive.demo.BrowserFactory;
-import com.orangehrmlive.demo.MyInfoPage;
 import com.orangehrmlive.demo.LoginPage;
 
 import cucumber.api.java.en.Given;
@@ -35,8 +33,7 @@ public class LoginStepDefinition {
 	public void verifySuccessful() {
 		String expectedText = "Dashboard";
 		String actualText = loginPage.verifyLogin();
-//		Assert.assertTrue("Login not successful", expectedText.equals(actualText));
-		Assert.assertTrue(expectedText.equals(actualText));
+		Assert.assertTrue(expectedText.equals(actualText), "Login not successful");
 		
 	}
 	

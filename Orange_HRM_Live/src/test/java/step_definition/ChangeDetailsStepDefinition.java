@@ -1,6 +1,5 @@
 package step_definition;
 
-//import org.junit.Assert;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -46,38 +45,30 @@ public class ChangeDetailsStepDefinition {
 	public void updated_first_name_should_be_diplayed(String name)  {
 		String expectedText = name;;
 		String actualText = myInfoPage.verifyNameChange();
-		Assert.assertTrue(expectedText.equals(actualText));
-		//Assert.assertTrue("Name change not successful", expectedText.equals(actualText));
+		Assert.assertTrue(expectedText.equals(actualText), "Name change not successful");
 	    
 	}
 	
-	@When("^When User click on change photo$")
+	@When("^User click on change photo$")
 	public void User_clicked_on_change_photo() {
-		
+		myInfoPage.clickChangePhoto();
 	}
 	
-	@And("^And User click on Choose File$")
+	@And("^User select a png photo to upload$")
 	public void User_clicked_on_Choose_File() {
-		
+		myInfoPage.selectPNGPhoto();
 	}
 	
-	@And("^And User select a photo from local drive$")
-	public void User_select_photo() {
-		
-	}
-	
-	@And("^And User click on Open button$")
-	public void User_clicked_on_Open_button() {
-		
-	}
-	
-	@And("^And User click on upload button$")
+	@And("^User click on upload button$")
 	public void User_clicked_on_upload_button() {
-		
+		myInfoPage.clickUploadPhoto();
 	}
 	
-	@Then("^Then Photo should be uploaded$")
+	@Then("^Photo should be uploaded$")
 	public void photo_should_be_uploaded() {
+		String expectedText = "message success fadable";
+		String actualText = myInfoPage.verifyPhotoUpload();
+		Assert.assertTrue(expectedText.equals(actualText), "Photo was not uploaded");
 		
 	}
 }

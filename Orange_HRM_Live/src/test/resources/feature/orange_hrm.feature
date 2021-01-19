@@ -20,12 +20,10 @@ Examples:
 |Rahul|
 
 @changeDetails
-Scenario: TC07_Check the upload of a JPG format image
-Given User is in to My Info Page
+Scenario: TC08_Check the upload of a PNG format image
+
 When User click on change photo 
-And User click on Choose File
-And User select a photo from local drive
-And User click on Open button
+And User select a png photo to upload
 And User click on upload button
 Then Photo should be uploaded
 

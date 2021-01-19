@@ -65,5 +65,25 @@ public class MyInfoPage extends GenericFunctions {
 		explicitlyWait(60,disabledFirstName);
 		return disabledFirstName.getAttribute("value");
 	}
+	
+	public void clickChangePhoto() {
+		employeePhotoButton.click();
+		wait(1);
+		
+	}
+	public void selectPNGPhoto() {
+		choosePhotoButton.sendKeys("C:\\Users\\rkuma270\\OneDrive - Capgemini\\Pictures\\Screenshots\\Screenshot (1).png");
+		wait(1);
+		
+	}
+	public void clickUploadPhoto() {
+		uploadButton.click();
+		wait(1);
+		
+	}
+	public String verifyPhotoUpload() {
+		return uploadSuccessMsg.getAttribute("class");
+		
+	}
 
 }
