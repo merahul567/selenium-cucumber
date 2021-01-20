@@ -12,7 +12,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(format = { "pretty", "html:reports/test-report" },
 features="src/test/resources/feature",
-glue="step_definition",tags = {"@loginPage,@changeDetails"}, monochrome = true)
+glue="step_definition",tags = {"@loginPage,@changeDetails,@userManagementPage"}, monochrome = true)
 public class TestLogin extends AbstractTestNGCucumberTests{
 @AfterClass
 public static void tearDown() throws Exception {

@@ -14,14 +14,13 @@ import cucumber.api.java.en.When;
 
 public class LoginStepDefinition {
 
-	public static WebDriver driver;
-	static LoginPage loginPage;
+	public static WebDriver driver =BrowserFactory.getDriver("chrome");
+	static LoginPage loginPage=PageFactory.initElements(driver,LoginPage.class);
 
 	@Given("^navigate to Orange HRM page$")
 	public void navigate() {
-		driver = BrowserFactory.getDriver("chrome");
 		driver.get("https://opensource-demo.orangehrmlive.com/");
-		loginPage = PageFactory.initElements(driver, LoginPage.class);
+		
 	}
 
 	@When("^user logged in using username as \"(.*)\" and password as \"(.*)\"$")
