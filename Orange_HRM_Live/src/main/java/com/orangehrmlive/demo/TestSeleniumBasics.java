@@ -3,11 +3,7 @@ package com.orangehrmlive.demo;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-import javax.swing.JOptionPane;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestSeleniumBasics {

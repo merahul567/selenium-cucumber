@@ -11,8 +11,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(format = { "pretty", "html:reports/test-report" },
-features="src/test/resources/feature",
-glue="step_definition",tags = {"@loginPage,@changeDetails,@userManagementPage"}, monochrome = true)
+features="src/test/resources/features",
+glue="step_definitions",
+tags = {"@loginPage,@changeDetails,@userManagementPage"}, 
+monochrome = true,
+dryRun = false,
+strict = true
+)
 public class TestLogin extends AbstractTestNGCucumberTests{
 @AfterClass
 public static void tearDown() throws Exception {

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import com.orangehrmlive.demo.GenericFunctions;
 
 public class LoginPage extends GenericFunctions {
 
