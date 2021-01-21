@@ -61,7 +61,7 @@ public class MyInfoPage extends GenericFunctions {
 	}
 	public String verifyNameChange() {
 		wait(1);
-		explicitlyWait(60,disabledFirstName);
+		explicitlyWait(10,disabledFirstName);
 		return disabledFirstName.getAttribute("value");
 	}
 	

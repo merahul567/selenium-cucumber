@@ -30,12 +30,12 @@ public class AdminPage extends GenericFunctions{
 	
 	public void clickAdminButton() {
 		wait(1);
-		adminPageButton.click();
+		mouseHover(adminPageButton);
 		
 	}
 	public void clickUserMngButton() {
 		wait(1);
-		UserMngButton.click();
+		mouseHover(UserMngButton);
 		
 	}
 	public void clickUsersButton() {

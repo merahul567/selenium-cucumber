@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -51,6 +52,13 @@ public class GenericFunctions extends BrowserFactory {
 		System.out.println(captchaVal);
 		// Type the entered captcha to the text box
 		captchaField.sendKeys(captchaVal);
+	}
+	
+	public static void mouseHover(WebElement element) {
+		Actions actions = new Actions(driver);
+		WebElement target = element;
+		actions.moveToElement(target).perform();
+		
 	}
 
 }
