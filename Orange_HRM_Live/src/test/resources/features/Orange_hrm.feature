@@ -18,7 +18,7 @@ Feature: OrangeHRM Feature File
       | first_name |
       | Rahul      |
 
-  @changeDetailsr
+  @changeDetails
   Scenario: TC08_Check the upload of a PNG format image
     When User click on change photo
     And User select a png photo to upload

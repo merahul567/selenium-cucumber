@@ -13,7 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(format = { "pretty", "html:reports/test-report" },
 features="src/test/resources/features",
 glue="step_definitions",
-tags = {"@loginPage,@changeDetails,@userManagement"}, 
+tags = {"@loginPage,~@changeDetails,~@userManagement,@addEmployee"}, 
 monochrome = true,
 dryRun = false,
 strict = true

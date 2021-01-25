@@ -39,7 +39,7 @@ formatter.match({
   "location": "LoginStepDefinition.navigate()"
 });
 formatter.result({
-  "duration": 10830519600,
+  "duration": 15062734600,
   "status": "passed"
 });
 formatter.match({
@@ -56,14 +56,14 @@ formatter.match({
   "location": "LoginStepDefinition.login(String,String)"
 });
 formatter.result({
-  "duration": 9924227600,
+  "duration": 10262242100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.verifySuccessful()"
 });
 formatter.result({
-  "duration": 43573300,
+  "duration": 118277500,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -177,14 +177,14 @@ formatter.match({
   "location": "MyInfoStepDefinition.User_is_in_to_My_Info_Page()"
 });
 formatter.result({
-  "duration": 4346254600,
+  "duration": 4252152200,
   "status": "passed"
 });
 formatter.match({
   "location": "MyInfoStepDefinition.User_clicked_on_Edit_button()"
 });
 formatter.result({
-  "duration": 1089862200,
+  "duration": 1139508600,
   "status": "passed"
 });
 formatter.match({
@@ -197,14 +197,14 @@ formatter.match({
   "location": "MyInfoStepDefinition.User_changes_the_first_name(String)"
 });
 formatter.result({
-  "duration": 1145299200,
+  "duration": 1295367700,
   "status": "passed"
 });
 formatter.match({
   "location": "MyInfoStepDefinition.User_clicked_on_save_button()"
 });
 formatter.result({
-  "duration": 3247745600,
+  "duration": 3702638300,
   "status": "passed"
 });
 formatter.match({
@@ -217,7 +217,248 @@ formatter.match({
   "location": "MyInfoStepDefinition.updated_first_name_should_be_diplayed(String)"
 });
 formatter.result({
-  "duration": 1102316300,
+  "duration": 1255473200,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 22,
+  "name": "TC08_Check the upload of a PNG format image",
+  "description": "",
+  "id": "orangehrm-feature-file;tc08-check-the-upload-of-a-png-format-image",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 21,
+      "name": "@changeDetails"
+    }
+  ]
+});
+formatter.step({
+  "line": 23,
+  "name": "User click on change photo",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 24,
+  "name": "User select a png photo to upload",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "User click on upload button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "MyInfoStepDefinition.User_clicked_on_change_photo()"
+});
+formatter.result({
+  "duration": 2413778400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyInfoStepDefinition.User_clicked_on_Choose_File()"
+});
+formatter.result({
+  "duration": 1154673400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyInfoStepDefinition.User_clicked_on_upload_button()"
+});
+formatter.result({
+  "duration": 7713357300,
+  "status": "passed"
+});
+formatter.uri("PIM_module.feature");
+formatter.feature({
+  "line": 1,
+  "name": "OrangeHRM Admin Module Feature File",
+  "description": "",
+  "id": "orangehrm-admin-module-feature-file",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 4,
+  "name": "TC36_Verify Orange HRM - PIM Module - User Management - Add Employee",
+  "description": "",
+  "id": "orangehrm-admin-module-feature-file;tc36-verify-orange-hrm---pim-module---user-management---add-employee",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@addEmployee"
+    }
+  ]
+});
+formatter.step({
+  "line": 5,
+  "name": "User in on PIM Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "User navigate to Employee list",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "User click on Add Employee button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "User enter \"\u003cfirst_name\u003e\" and \"\u003clast_name\u003e\" of Employee",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "User click on save button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Employee \"\u003cfirst_name\u003e\" \"\u003clast_name\u003e\" should be added",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 11,
+  "name": "",
+  "description": "",
+  "id": "orangehrm-admin-module-feature-file;tc36-verify-orange-hrm---pim-module---user-management---add-employee;",
+  "rows": [
+    {
+      "cells": [
+        "first_name",
+        "last_name"
+      ],
+      "line": 12,
+      "id": "orangehrm-admin-module-feature-file;tc36-verify-orange-hrm---pim-module---user-management---add-employee;;1"
+    },
+    {
+      "cells": [
+        "Rahul",
+        "Kumar"
+      ],
+      "line": 13,
+      "id": "orangehrm-admin-module-feature-file;tc36-verify-orange-hrm---pim-module---user-management---add-employee;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "TC36_Verify Orange HRM - PIM Module - User Management - Add Employee",
+  "description": "",
+  "id": "orangehrm-admin-module-feature-file;tc36-verify-orange-hrm---pim-module---user-management---add-employee;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@addEmployee"
+    }
+  ]
+});
+formatter.step({
+  "line": 5,
+  "name": "User in on PIM Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "User navigate to Employee list",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "User click on Add Employee button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "User enter \"Rahul\" and \"Kumar\" of Employee",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "User click on save button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Employee \"Rahul\" \"Kumar\" should be added",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PIMStepDefinition.User_in_on_PIM_Page()"
+});
+formatter.result({
+  "duration": 1232005700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PIMStepDefinition.User_navigate_to_Employee_list()"
+});
+formatter.result({
+  "duration": 4312789800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PIMStepDefinition.User_click_on_Add_Employee_button()"
+});
+formatter.result({
+  "duration": 3074780500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rahul",
+      "offset": 12
+    },
+    {
+      "val": "Kumar",
+      "offset": 24
+    }
+  ],
+  "location": "PIMStepDefinition.User_enter_employee_details(String,String)"
+});
+formatter.result({
+  "duration": 2392828200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PIMStepDefinition.User_click_on_save_button()"
+});
+formatter.result({
+  "duration": 4233310800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rahul",
+      "offset": 10
+    },
+    {
+      "val": "Kumar",
+      "offset": 18
+    }
+  ],
+  "location": "PIMStepDefinition.Employee_should_be_added(String,String)"
+});
+formatter.result({
+  "duration": 132668900,
   "status": "passed"
 });
 formatter.uri("admin_module.feature");
@@ -271,35 +512,35 @@ formatter.match({
   "location": "AdminStepDefinition.User_is_on_Admin_Page()"
 });
 formatter.result({
-  "duration": 1172218000,
+  "duration": 1202254200,
   "status": "passed"
 });
 formatter.match({
   "location": "AdminStepDefinition.User_navigate_to_User_Management_section()"
 });
 formatter.result({
-  "duration": 4395465700,
+  "duration": 3657058300,
   "status": "passed"
 });
 formatter.match({
   "location": "AdminStepDefinition.User_click_on_Add_User_button()"
 });
 formatter.result({
-  "duration": 2288330700,
+  "duration": 2233289600,
   "status": "passed"
 });
 formatter.match({
   "location": "AdminStepDefinition.User_enter_Employee_details()"
 });
 formatter.result({
-  "duration": 68500,
+  "duration": 97000,
   "status": "passed"
 });
 formatter.match({
   "location": "AdminStepDefinition.User_click_on_Save_button()"
 });
 formatter.result({
-  "duration": 147200,
+  "duration": 161500,
   "status": "passed"
 });
 });

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 21 18:24:57 IST 2021</td>
+<td>Started on:</td><td>Mon Jan 25 16:48:14 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42228 ms)</td>
+<tr><td>Total time:</td><td>76 seconds (76764 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test_runner.TestLogin.run_cukes()'><b>run_cukes</b><br>Test class: test_runner.TestLogin<br>Test method: Runs Cucumber Features<br/>
-<a href="#Output-1415545023" onClick='toggleBox("Output-1415545023", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-514453513" onClick='toggleBox("Output-514453513", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1415545023" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1415545023">
+<a href="#Output-514453513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-514453513">
 <div "featureFile">Feature File: Orange_hrm.feature</div><br/>
 <div "feature">Feature: OrangeHRM Feature File</div><br/>
 <div "scenario">Scenario: TC01_Successful Employee login to OrangeHRM portal</div><br/>
-<div "result">Given  navigate to Orange HRM page (passed : 10s)</div><br/>
-<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 9s)</div><br/>
+<div "result">Given  navigate to Orange HRM page (passed : 15s)</div><br/>
+<div "result">When  user logged in using username as &quot;Admin&quot; and password as &quot;admin123&quot; (passed : 10s)</div><br/>
 <div "result">Then  home page should be displayed (passed : 0s)</div><br/>
 <div "scenarioOutline">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div><br/>
 <div "scenario">Scenario Outline: TC05_Personal details- modification with valid values- &quot;First Name&quot;</div><br/>
@@ -93,19 +93,33 @@ function toggleAllBoxes() {
 <div "result">And  User changes the first name to &quot;&lt;first_name&gt;&quot; (passed : 1s)</div><br/>
 <div "result">And  User clicked on save button (passed : 3s)</div><br/>
 <div "result">Then  updated first name &quot;&lt;first_name&gt;&quot; should be diplayed (passed : 1s)</div><br/>
+<div "scenario">Scenario: TC08_Check the upload of a PNG format image</div><br/>
+<div "result">Given  User is in to My Info Page (passed : 2s)</div><br/>
+<div "result">When  User clicked on Edit button (passed : 1s)</div><br/>
+<div "result">And  User changes the first name to &quot;Rahul&quot; (passed : 7s)</div><br/>
+<div "featureFile">Feature File: PIM_module.feature</div><br/>
+<div "feature">Feature: OrangeHRM Admin Module Feature File</div><br/>
+<div "scenarioOutline">Scenario Outline: TC36_Verify Orange HRM - PIM Module - User Management - Add Employee</div><br/>
+<div "scenario">Scenario Outline: TC36_Verify Orange HRM - PIM Module - User Management - Add Employee</div><br/>
+<div "result">And  User clicked on save button (passed : 1s)</div><br/>
+<div "result">Then  updated first name &quot;Rahul&quot; should be diplayed (passed : 4s)</div><br/>
+<div "result">When  User click on change photo (passed : 3s)</div><br/>
+<div "result">And  User select a png photo to upload (passed : 2s)</div><br/>
+<div "result">And  User click on upload button (passed : 4s)</div><br/>
+<div "result">Given  User in on PIM Page (passed : 0s)</div><br/>
 <div "featureFile">Feature File: admin_module.feature</div><br/>
 <div "feature">Feature: OrangeHRM Admin Module Feature File</div><br/>
 <div "scenario">Scenario: TC20_Verify Orange HRM - Admin Module - User Management - Add Feature</div><br/>
-<div "result">Given  User is in to My Info Page (passed : 1s)</div><br/>
-<div "result">When  User clicked on Edit button (passed : 4s)</div><br/>
-<div "result">And  User changes the first name to &quot;Rahul&quot; (passed : 2s)</div><br/>
-<div "result">And  User clicked on save button (passed : 0s)</div><br/>
-<div "result">Then  updated first name &quot;Rahul&quot; should be diplayed (passed : 0s)</div><br/>
+<div "result">When  User navigate to Employee list (passed : 1s)</div><br/>
+<div "result">And  User click on Add Employee button (passed : 3s)</div><br/>
+<div "result">And  User enter &quot;&lt;first_name&gt;&quot; and &quot;&lt;last_name&gt;&quot; of Employee (passed : 2s)</div><br/>
+<div "result">And  User click on save button (passed : 0s)</div><br/>
+<div "result">Then  Employee &quot;&lt;first_name&gt;&quot; &quot;&lt;last_name&gt;&quot; should be added (passed : 0s)</div><br/>
 </div>
 </td>
 <td></td>
-<td>40</td>
-<td>test_runner.TestLogin@7544a1e4</td></tr>
+<td>73</td>
+<td>test_runner.TestLogin@443dbe42</td></tr>
 </table><p>
 </body>
 </html>
