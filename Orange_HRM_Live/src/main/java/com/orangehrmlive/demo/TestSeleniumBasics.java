@@ -9,6 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestSeleniumBasics {
 
 	public static void main(String[] args) throws InterruptedException {
+		
+		Propert pro = new Propert();
+		pro.getProperty("empId");
+		pro.setProperty("empId", "12345");
+		pro.getProperty("empId");
+		pro.getProperty("empName");
+		pro.setProperty("empName", "Rahul");
+		pro.getProperty("empName");
 		System.setProperty("webdriver.chrome.driver",
 				"src" + File.separator + "main" + File.separator + "resources" + File.separator + "driver"
 						+ File.separator + "chrome_87.0.4280.88" + File.separator + "chromedriver.exe");
